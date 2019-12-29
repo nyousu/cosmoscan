@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
          //実行対象のSeederクラス
-        $this->call(ProductinfoSeeder::class);
+        $this->call(ShipmentsTableSeeder::class);
 
         Model::reguard();
     }
