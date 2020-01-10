@@ -1,5 +1,7 @@
 <!--/resources/views/cosmoscan/index.blade.php-->
-@extends('layouts.product')
+@extends('layouts.user_common')
+@section('title', 'Resister')
+@section('text', '登録画面')
  @section('content')
 
  @foreach($cosmoscans as $data)
@@ -14,4 +16,6 @@
  @endforeach
 
  <a href="{{route('cosmoscan.new')}} "  class=btn btn-primary>新規登録</a>
+
+ @endsection
 

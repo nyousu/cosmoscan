@@ -4,4 +4,5 @@
         {{ csrf_field() }}
         <button id="btn-logout" class="btn btn-danger">ログアウト</button>
 </form>
+
 @endsection

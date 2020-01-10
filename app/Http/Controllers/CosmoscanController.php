@@ -22,17 +22,9 @@ class CosmoscanController extends Controller
        }
 
        public function getEntryForm() {
-        $skintypes = Skintype::all(); //指定したテーブル全てを表示
-           return view('cosmoscan.new',['skintypes'=>$skintypes]);
+        $news = Cosmoscan::all(); //指定したテーブル全てを表示
+           return view('cosmoscan.new',['new'=>$news]);
        }
-
-
-       public function getInformation(){
-        $skintroubles = Skintrouble::all(); //指定したテーブル全てを表示
-           return view('cosmoscan.new',['skintroubles'=>$skintroubles]);
-       }
-
-
 
 
 
@@ -45,6 +37,9 @@ class CosmoscanController extends Controller
        //->nameは入力フォームのname属性のnameから取ってきます
        $cosmoscan->age = $request->age;
        $cosmoscan->address = $request->address;
+       $cosmoscan->skintype = $request->skintype;
+       $cosmoscan->buy_place = $request->buy_place;
+
        $cosmoscan->save();
        //保存する宣言が必要。削除だとdestry();,更新だとupdate();
 
@@ -123,12 +118,66 @@ class CosmoscanController extends Controller
     //送信されました画面。。。（）内はurl(routeのweb.php参照)
     }
 
-    public function product_favor() {
+    public function productFavor() {
 
-        $product_favors = Product_favor::all(); //指定したテーブル全てを表示
+        $productFavors = Cosmoscan::all(); //指定したテーブル全てを表示
         //var_dump($);
 
-          return view('cosmoscan.favor',['product_favors'=>$product_favors]);//矢印左側がblade上で表記すると変数を呼び出す
+          return view('cosmoscan.productFavor',['productFavor'=>$productFavors]);//矢印左側がblade上で表記すると変数を呼び出す
        }
+
+       public function getIndexDetailPage() {
+
+        $details = Cosmoscan::all(); //指定したテーブル全てを表示
+        //var_dump($cosmoscans);
+
+          return view('cosmoscan.detail',['detail'=>$details]);//矢印左側がblade上で表記すると変数を呼び出す
+       }
+
+       public function getIndexProductlPage() {
+
+        $products = Cosmoscan::all(); //指定したテーブル全てを表示
+        //var_dump($cosmoscans);
+
+          return view('cosmoscan.product',['product'=>$products]);//矢印左側がblade上で表記すると変数を呼び出す
+       }
+
+       //scanページのコントローラー
+       public function getIndexScanPage() {
+
+        $scans = Cosmoscan::all(); //指定したテーブル全てを表示
+        //var_dump($cosmoscans);
+
+          return view('cosmoscan.scan',['scan'=>$scans]);//矢印左側がblade上で表記すると変数を呼び出す
+       }
+
+        //scanページのコントローラー
+        public function getCouponPage() {
+
+            $coupons = Cosmoscan::all(); //指定したテーブル全てを表示
+                            //var_dump($cosmoscans);
+
+             return view('cosmoscan.coupon',['coupon'=>$coupons]);//矢印左側がblade上で表記すると変数を呼び出す
+               }
+
+                 //shoppingページのコントローラー
+        public function getShoppingPage() {
+
+            $shoppings = Cosmoscan::all(); //指定したテーブル全てを表示
+                            //var_dump($cosmoscans);
+
+             return view('cosmoscan.shopping',['shopping'=>$shoppings]);//矢印左側がblade上で表記すると変数を呼び出す
+               }
+
+
+
+
+         public function getBarcodePage() {
+
+            $barcodes = Cosmoscan::all(); //指定したテーブル全てを表示
+
+                  return view('cosmoscan.barcode',['barcode'=>$barcodes]);//矢印左側がblade上で表記すると変数を呼び出す
+               }
+
 
 }

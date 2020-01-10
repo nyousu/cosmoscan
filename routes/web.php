@@ -1,6 +1,29 @@
 <?php
 
-/*
+/*@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                    <a href="{{route('cosmoscan.index')}} "  class=btn btn-primary>あなたの化粧品情報を登録します</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -13,12 +36,12 @@
 /*routes/web.php*/
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sample');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home','HomeController@index')->name('home');
 
 Route::get('users','UsersController@index');
 
@@ -50,7 +73,7 @@ Route::get('/cosmoscan/recommend', 'CosmoscanController@recommend')->name('cosmo
 Route::get('/cosmoscan/scan', 'CosmoscanController@scan')->name('cosmoscan.scan');
 
 //商品好意度ページを表示
-Route::get('/cosmoscan/favor', 'CosmoscanController@favor')->name('cosmoscan.favor');
+Route::get('/cosmoscan/favor', 'CosmoscanController@productFavor')->name('cosmoscan.productFavor');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'guest:admin'], function() {
     Route::get('/home', function () {
@@ -68,3 +91,30 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function(){
     Route::get('home', 'Admin\HomeController@index')->name('admin.home');
 });
 
+
+//商品詳細ページを表示
+Route::get('/cosmoscan/detail', 'CosmoscanController@getIndexDetailPage')->name('cosmoscan.detail');
+
+//商品ページを表示
+Route::get('/cosmoscan/product', 'CosmoscanController@getIndexProductlPage')->name('cosmoscan.product');
+
+//スキャンページを表示
+Route::get('/cosmoscan/scan', 'CosmoscanController@getIndexScanPage')->name('cosmoscan.scan');
+
+//クーポンページを表示
+Route::get('/cosmoscan/coupon', 'CosmoscanController@getCouponPage')->name('cosmoscan.coupon');
+
+//オンライン購入ページを表示
+Route::get('/cosmoscan/shopping', 'CosmoscanController@getShoppingPage')->name('cosmoscan.shopping');
+
+
+//ユーザー情報保存
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// 以下を追加
+Route::post('/cosmoscan/save', 'UsersController@getSavePage')->name('cosmoscan.save');
+
+//バーコードを表示
+Route::get('/cosmoscan/barcode', 'CosmoscanController@getBarcodePage')->name('cosmoscan.barcode');

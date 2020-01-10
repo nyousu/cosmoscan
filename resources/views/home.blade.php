@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="{{route('cosmoscan.index')}} "  class=btn btn-primary>あなたの化粧品情報を登録します</a>
                 </div>
             </div>
         </div>
