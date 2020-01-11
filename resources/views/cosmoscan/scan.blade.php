@@ -1,6 +1,6 @@
 @extends('layouts.user_common')
 @section('title', 'スキャン')
-@section('text', '商品をカメラにかざしてください')
+@section('text', '今までのスキャン画像')
 @section('content')
 <fieldset>
         <label>バーコードの画像</label>

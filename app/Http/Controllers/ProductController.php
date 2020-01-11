@@ -60,25 +60,25 @@ class ProductController extends Controller
         $url9 = "https://www.acseine.co.jp/shop/?utm_source=google&utm_medium=CPC&utm_campaign=top&gclid=CjwKCAiAu9vwBRAEEiwAzvjq-5ApSefkSdHpa1Do1POWO80HSb9h257MX6DCfnZlm-S6HIqR4ld4cRoCOoUQAvD_BwE";
         $url10 = "https://mobile.chanel.com/ja_JP/fragrance-beauty/skincare/p/by-category/serums-_-concentrates/le-blanc-serum-healthy-light-creatorbrrevitalizing---brightening---nourishing-p141216.html#skuid-0141216";
 
-        if ($cnt == 1 && $JANcode == "9784802611848") {
+        if ($cnt == 1 && $JANcode == "4901872964613") {
             return $url1;
-        } elseif ($cnt == 1 && $JANcode == "493456789012") {
+        } else if ($cnt == 1 && $JANcode == "9784802611848") {
             return $url2;
-        } elseif ($cnt == 1 && $JANcode == "494567890123") {
+        } else if ($cnt == 1 && $JANcode == "494567890123") {
             return $url3;
-        } elseif ($cnt == 1 && $JANcode == "495678901234") {
+        } else if ($cnt == 1 && $JANcode == "495678901234") {
             return $url4;
-        } elseif ($cnt == 1 && $JANcode == "496789012345") {
+        } else if ($cnt == 1 && $JANcode == "496789012345") {
             return $url5;
-        } elseif ($cnt == 1 && $JANcode == "497890123456") {
+        } else if ($cnt == 1 && $JANcode == "497890123456") {
             return $url6;
-        } elseif ($cnt == 1 && $JANcode == "498901234567") {
+        } else if ($cnt == 1 && $JANcode == "498901234567") {
             return $url7;
-        } elseif ($cnt == 1 && $JANcode == "499012345678") {
+        } else if ($cnt == 1 && $JANcode == "499012345678") {
             return $url8;
-        } elseif ($cnt == 1 && $JANcode == "499123456789") {
+        } else if ($cnt == 1 && $JANcode == "499123456789") {
             return $url9;
-        } elseif ($cnt == 1 && $JANcode == "499234567890") {
+        } else if ($cnt == 1 && $JANcode == "499234567890") {
             return $url10;
         } else {
             return "該当する商品はありません";

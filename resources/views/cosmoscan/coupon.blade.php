@@ -15,7 +15,7 @@
                   <p class="card-text">資生堂HAKU/ホワイトニングエッセンス<br>¥5,000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"  a href= "https://www.shiseido.co.jp/haku/"> shopping site</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
                     </div>
                     <small class="text-muted">50m以内</small>

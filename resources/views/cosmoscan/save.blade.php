@@ -2,7 +2,8 @@
 @section('title', 'Your cosme data')
 @section('text', 'あなたのコスメデータ')
 @section('content')
-登録しました！
-<!--新規登録したデータが表示される＞
+登録しました！<br>
+
+  <a href="{{route('cosmoscan.barcode')}} "  class="btn btn-sm btn-outline-secondary">バーコードをスキャンしましょう！</a>
 
 @endsection
