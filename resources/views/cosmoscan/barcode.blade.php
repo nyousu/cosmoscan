@@ -12,6 +12,10 @@
     <div id="interactive" class="viewport"></div>
 
     <script>
+        window.axios.defaults.headers.common = {
+        'Accept':'application/json',
+        'Content-Type':'application/json'
+    };
         alert("カメラを起動します")
         Quagga.init({
             inputStream: { type : 'LiveStream' },
@@ -35,20 +39,15 @@
         console.log(success.codeResult.code)
         // if(calc(code)) alert(code);
         checking = true;
-        const url = 'http://api/v1/products/'+code;
+        const url = 'http://localhost/blog/public/api/products/{id}'+code;
         console.log('url',url)
             axios.get(url)
                 .then((response) => {
                 console.log(response);
                 checking = false;
-            })
-            .catch((error) => {
-                console.error('error',error)
-            })
-    })
-
-        if(code == "4901872964413") {
-            location.href= "https://www.shiseido.co.jp/haku/";
+                if(code == "4901872964413") {
+            location.href= "{{route('cosmoscan.product')}} ";
+            //location.href= "https://www.shiseido.co.jp/haku/";
 
         } else if(code ==2)  {
             location.href= "https://www.sofina.co.jp/whitening/";
@@ -81,6 +80,12 @@
         } else {
             alert('この商品は登録されていません。');
     };
+            })
+            .catch((error) => {
+                console.error('error',error)
+            })
+    })
+
 
 // const calc = isbn => {
 //     const arrIsbn = isbn

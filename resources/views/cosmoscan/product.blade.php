@@ -2,7 +2,7 @@
 <!--/resources/views/cosmoscan/recommend.blade.php-->
 @extends('layouts.user_common')
 @section('title', 'Reccomended Products')
-@section('text', 'おすすめ商品一覧')
+@section('text', 'スキャンされた製品からおすすめ商品一覧')
 @section('content')
 
 <!DOCTYPE html>
@@ -20,6 +20,7 @@
                     <div class="btn-group">
                       <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                      <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                     </div>
                     <small class="text-muted">50m以内</small>
                   </div>
@@ -36,6 +37,7 @@
                         <div class="btn-group">
                         <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                      <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                     </div>
                     <small class="text-muted">50m以内</small>
                   </div>
@@ -52,6 +54,7 @@
                     <div class="btn-group">
                             <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                      <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                     </div>
                     <small class="text-muted">100m以内</small>
                   </div>
@@ -68,6 +71,7 @@
                           <div class="btn-group">
                                 <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                            <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                           </div>
                           <small class="text-muted">150m以内</small>
                         </div>
@@ -84,6 +88,7 @@
                           <div class="btn-group">
                                 <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                            <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                           </div>
                           <small class="text-muted">300m以内</small>
                         </div>
@@ -100,6 +105,7 @@
                           <div class="btn-group">
                                 <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                            <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                           </div>
                           <small class="text-muted">300m以内</small>
                         </div>
@@ -116,6 +122,7 @@
                               <div class="btn-group">
                                     <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                               </div>
                               <small class="text-muted">500m以内</small>
                             </div>
@@ -132,6 +139,7 @@
                               <div class="btn-group">
                                     <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                               </div>
                               <small class="text-muted">500m以内</small>
                             </div>
@@ -148,6 +156,7 @@
                                   <div class="btn-group">
                                         <a href="{{route('cosmoscan.detail')}} "  class="btn btn-sm btn-outline-secondary">Detail</a>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                    <a href="{{route('cosmoscan.productFavor')}} "  class="btn btn-sm btn-outline-secondary">評価</a>
                                   </div>
                                   <small class="text-muted">500m以内</small>
                                 </div>
