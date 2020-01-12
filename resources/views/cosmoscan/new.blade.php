@@ -3,7 +3,7 @@
 @section('text', '新規登録')
 @section('content')
 
-<form action="/blog/public/cosmoscan/save"  method="POST">
+<form action="/cosmoscan/save"  method="POST">
 <!--resources/views/cosmoscan/new.blade.php-->
 
    {{csrf_field()}}
