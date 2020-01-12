@@ -39,7 +39,7 @@
         console.log(success.codeResult.code)
         // if(calc(code)) alert(code);
         checking = true;
-        const url = 'http://cosmoscan.sakura.ne.jp/api/products/{id}'+code;
+        const url = 'http://cosmoscan.sakura.ne.jp/cosmoscan/api/products/{id}'+code;
         console.log('url',url)
             axios.get(url)
                 .then((response) => {
