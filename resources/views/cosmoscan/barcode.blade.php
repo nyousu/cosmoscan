@@ -33,7 +33,7 @@ Quagga.init({
 {{-- // <div id="interactive" class="viewport"></div>
 
 // <script> --}}
-//         window.axios.defaults.headers.common = {
+{{-- //         window.axios.defaults.headers.common = {
 //         'Accept':'application/json',
 //         'Content-Type':'application/json'
 //     };
@@ -124,7 +124,7 @@ Quagga.init({
 
 //     return checkDigit === remainder;
 // }
-</script>
+</script> --}}
 <br>
 <a href="{{route('cosmoscan.product')}} "  class="btn btn-sm btn-outline-secondary">レコメンド商品一覧</a>
 
