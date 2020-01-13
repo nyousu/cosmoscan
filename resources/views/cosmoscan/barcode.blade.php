@@ -7,10 +7,18 @@
 @section('text', 'バーコード読み取り画面')
 @section('content')
 
+
+<div id="interactive" class="viewport"></div>
+
 <script>
-Quagga.init({
-    inputStream: {
-      name: 'Live',
+ window.axios.defaults.headers.common = {
+        'Accept':'application/json',
+        'Content-Type':'application/json'
+    };
+        alert("カメラを起動します")
+        Quagga.init({
+        inputStream: {
+        name: 'Live',
       type: 'LiveStream',
       target: document.querySelector('#quagga')
     },
