@@ -30,7 +30,7 @@
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                <img src="../../public/image/kao_bihaku.jpg" alt="..." class="img-thumbnail">
+                <img src="http://cosmoscan.sakura.ne.jp/image/kao_bihaku.jpg" alt="..." class="img-thumbnail">
                 <div class="card-body">
                   <p class="card-text">花王/ブライトニングエッセンス<br>¥5,000</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -47,7 +47,7 @@
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                <img src="../../public/image/pola_bihaku.jpg" alt="..." class="img-thumbnail">
+                <img src="http://cosmoscan.sakura.ne.jp/image/pola_bihaku.jpg" alt="..." class="img-thumbnail">
                 <div class="card-body">
                   <p class="card-text">ポーラ/ホワイトコンクルージョン<br>¥12,000</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -64,7 +64,7 @@
             <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                       <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                      <img src="../../public/image/exage_bihaku.jpg" alt="..." class="img-thumbnail">
+                      <img src="http://cosmoscan.sakura.ne.jp/image/exage_bihaku.jpg" alt="..." class="img-thumbnail">
                       <div class="card-body">
                         <p class="card-text">エクサージュ/ホワイトニングエッセンス<br>¥8,000</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -81,7 +81,7 @@
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                       <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                      <img src="../../public/image/lancom_bihaku.jpg" alt="..." class="img-thumbnail">
+                      <img src="http://cosmoscan.sakura.ne.jp/image/lancom_bihaku.jpg" alt="..." class="img-thumbnail">
                       <div class="card-body">
                         <p class="card-text">ランコム/イルミネーションエッセンス<br>¥18,000</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -98,7 +98,7 @@
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                       <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                      <img src="../../public/image/sisley_bihaku.jpg" alt="..." class="img-thumbnail">
+                      <img src="http://cosmoscan.sakura.ne.jp/image/sisley_bihaku.jpg" alt="..." class="img-thumbnail">
                       <div class="card-body">
                         <p class="card-text">シスレー/イルミネーションエッセンス<br>¥20,000</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -115,7 +115,7 @@
                   <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                           <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                          <img src="../../public/image/rmk_bihaku.jpg" alt="..." class="img-thumbnail">
+                          <img src="http://cosmoscan.sakura.ne.jp/image/rmk_bihaku.jpg" alt="..." class="img-thumbnail">
                           <div class="card-body">
                             <p class="card-text">RMK/ホワイトニングスポッツ<br>¥8,000</p>
                             <div class="d-flex justify-content-between align-items-center">
@@ -132,7 +132,7 @@
                       <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                           <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                          <img src="../../public/image/estee_bihaku.jpg" alt="..." class="img-thumbnail">
+                          <img src="http://cosmoscan.sakura.ne.jp/image/estee_bihaku.jpg" alt="..." class="img-thumbnail">
                           <div class="card-body">
                             <p class="card-text">エスティローダー/ホワイトエッセンス<br>¥12,000</p>
                             <div class="d-flex justify-content-between align-items-center">
@@ -149,7 +149,7 @@
                       <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                               <svg class="bd-placeholder-img card-img-top" width="0%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="43%" y="50%" fill="#eceeef" dy=".3em">商品画像</text></svg>
-                              <img src="../../public/image/lancom_bihaku.jpg" alt="..." class="img-thumbnail">
+                              <img src="http://cosmoscan.sakura.ne.jp/image/lancom_bihaku.jpg" alt="..." class="img-thumbnail">
                               <div class="card-body">
                                 <p class="card-text">アクセーヌ/センシティブホワイトニング<br>¥7,000</p>
                                 <div class="d-flex justify-content-between align-items-center">
