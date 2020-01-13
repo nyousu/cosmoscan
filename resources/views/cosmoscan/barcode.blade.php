@@ -25,7 +25,7 @@ Quagga.init({
       console.error("An error has occured. Detail:")
       console.error(err)
     }
-  })
+  });
 
 </script>
 
