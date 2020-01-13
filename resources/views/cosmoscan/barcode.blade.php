@@ -8,7 +8,7 @@
 @section('content')
 
 
-<div id="interactive" class="viewport"></div>
+{{-- <div id="interactive" class="viewport"></div> --}}
 
 <script>
  window.axios.defaults.headers.common = {
