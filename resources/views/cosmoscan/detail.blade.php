@@ -9,7 +9,7 @@
               <div class="media">
                     <!-- 1.画像の配置 -->
                     <a class="media-left" href="">
-                        <img class="media-object" src= http://cosmoscan.sakura.ne.jp/image/estee_bihaku.jpg/>>
+                        <img class="media-object" src= http://cosmoscan.sakura.ne.jp/image/estee_bihaku.jpg/>
                     </a>
                     <!-- 2.画像の説明 -->
                     <div class="media-body">
