@@ -1,4 +1,4 @@
-<script src="http://cosmoscan.sakura.ne.jp/resources/assets/js/quaggaJS-master/dist/quagga.min.js"></script>
+<script src="/resources/assets/js/quaggaJS-master/dist/quagga.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 
 
