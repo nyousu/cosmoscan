@@ -30,9 +30,9 @@ Quagga.init({
 </script>
 
 
-// <div id="interactive" class="viewport"></div>
+{{-- // <div id="interactive" class="viewport"></div>
 
-// <script>
+// <script> --}}
 //         window.axios.defaults.headers.common = {
 //         'Accept':'application/json',
 //         'Content-Type':'application/json'
