@@ -8,13 +8,13 @@
 @section('content')
 
 
-{{-- <div id="interactive" class="viewport"></div> --}}
+<div id="interactive" class="viewport"></div>
 
 <script>
- window.axios.defaults.headers.common = {
-        'Accept':'application/json',
-        'Content-Type':'application/json'
-    };
+//  window.axios.defaults.headers.common = {
+//         'Accept':'application/json',
+//         'Content-Type':'application/json'
+//     };
         alert("カメラを起動します")
         Quagga.init({
         inputStream: {
