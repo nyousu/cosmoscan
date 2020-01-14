@@ -8,19 +8,38 @@
 @section('content')
 
 
-<div id="interactive" class="viewport"></div>
-
-<div id="#quagga"></div>
+{{-- <div id="interactive" class="viewport"></div>
+<div id="#quagga"></div> --}}
 
 <script>
-    document.querySelector("#file").addEventListener("change", function(e){
-	const file = e.target.files[0];
-  const filereader = new FileReader();
-  filereader.onload = function(event){
-  	document.querySelector('#preview').setAttribute("src", event.target.result);
+const onChangeInput = e => {
+  // Input要素を取得
+  const input = document.querySelector('#quagga')
+  // ファイルが選択されていたら
+  if(input.files && input.files.length) {
+    // Quaggaでデコード
+    const objectUrl = URL.createObjectURL(input.files[0])
+    Quagga.decodeSingle({
+      decoder: {
+        readers: ['code_128_reader']
+      },
+      locator: {
+        patchSize: 'medium',
+        halfSample: true
+      },
+      locate: true,
+      src: objectUrl
+    }, res => {
+      // 結果の処理
+      if(!res){
+        window.alert('スキャンできませんでした。')
+      } else {
+        const code = res.codeResult.code
+        window.alert('スキャンできました。結果: ' + code)
+      }
+    })
   }
-	filereader.readAsDataURL(file);
-});
+}
 
 //  window.axios.defaults.headers.common = {
 //         'Accept':'application/json',
@@ -47,9 +66,10 @@
 //   });
 
 
-
  </script>
-
+ <body>
+<input id='quagga' type='file' accept='image/*' capture='camera' onChange='onChangeInput()'></input>
+</body>
 
 {{-- // <div id="interactive" class="viewport"></div>
 
