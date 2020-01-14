@@ -10,6 +10,8 @@
 
 <div id="interactive" class="viewport"></div>
 
+<div id="#quagga"></div>
+
 <script>
 //  window.axios.defaults.headers.common = {
 //         'Accept':'application/json',
@@ -31,7 +33,7 @@
       Quagga.start()
     } else {
       console.error("An error has occured. Detail:")
-      console.error()
+      console.error(err)
     }
   });
 
