@@ -13,31 +13,42 @@
 <div id="#quagga"></div>
 
 <script>
+    document.querySelector("#file").addEventListener("change", function(e){
+	const file = e.target.files[0];
+  const filereader = new FileReader();
+  filereader.onload = function(event){
+  	document.querySelector('#preview').setAttribute("src", event.target.result);
+  }
+	filereader.readAsDataURL(file);
+});
+
 //  window.axios.defaults.headers.common = {
 //         'Accept':'application/json',
 //         'Content-Type':'application/json'
 //     };
-        alert("カメラを起動します")
-        Quagga.init({
-        inputStream: {
-        name: 'Live',
-      type: 'LiveStream',
-      target: document.querySelector('#quagga')
-    },
-    decoder : {
-      readers: ["code_128_reader"]
-    }
-  }, err => {
-    if(!err){
-      console.log("Initialization finished. Ready to start")
-      Quagga.start()
-    } else {
-      console.error("An error has occured. Detail:")
-      console.error(err)
-    }
-  });
+//         alert("カメラを起動します")
+//         Quagga.init({
+//         inputStream: {
+//         name: 'Live',
+//       type: 'LiveStream',
+//       target: document.querySelector('#quagga')
+//     },
+//     decoder : {
+//       readers: ["code_128_reader"]
+//     }
+//   }, err => {
+//     if(!err){
+//       console.log("Initialization finished. Ready to start")
+//       Quagga.start()
+//     } else {
+//       console.error("An error has occured. Detail:")
+//       console.error(err)
+//     }
+//   });
 
-</script>
+
+
+ </script>
 
 
 {{-- // <div id="interactive" class="viewport"></div>
